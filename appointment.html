@@ -1,0 +1,48 @@
+<!-- A Dental Clinic Patient Management System with Appointment Scheduling -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DCPMSw/AS - Appointment</title>
+	<link rel="stylesheet" type="text/css" href="user.css"> </link>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+	<div class="header">
+		<a class="brand" href="mainpage.html">Doctor's Dental Clinic</a>
+		<div class="header-options">
+			<a href="appointment.html">Appointment</a>
+			<a href="doctors.html">Doctors</a>
+			<a href="profile.html">Profile</a>
+		</div>
+	</div>
+	<label class="title">Appointment</label>
+	<div class="side-options" align="center">
+		<button onclick="showFillUp('create')">Make an Appointment</button>
+		<button onclick="showFillUp('update')">Adjust Schedule</button>
+		<button onclick="cancelAppoint()">Cancel Appointment</button>
+		<button id="btnHistory" onclick="showHistory()">Show History</button>
+	</div>
+	<div class="appointment-box" align="center">
+		<a>You don't have a scheduled appointment.</a>
+	</div>
+	<div class="side-infos">
+		<label class="status">CLINIC STATUS:</label>
+		<label class="status">OPEN</label>
+
+		<label class="countdown">Time before appointment:</label>
+		<label class="countdown">None</label>
+		<p class="countdown">Please arrive at the clinic a few minutes before the scheduled time.</p>
+		<p class="countdown">Submit your appointment number to the registar to confirm your schedule.</p>
+	</div>
+		
+	<script src="user.js"></script>
+</body>
+<footer align="right">
+	<a>Give Feedback</a>
+	<b>·</b>
+	<a>About Us</a>
+</footer>
+</html>

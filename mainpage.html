@@ -1,0 +1,79 @@
+<!-- A Dental Clinic Patient Management System with Appointment Scheduling -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DCPMSw/AS</title>
+	<link rel="stylesheet" type="text/css" href="account.css"> </link>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			if (typeof(Storage) === "undefined") {
+				alert("Sorry, you are unable to use this site. Please change to a browser that has Web Storage support to continue.");
+				window.history.back;
+			}
+
+			if(localStorage.getItem("currentUser") == null) {
+				$("#mainpageAppoint").attr("href", "login.html");
+			
+				$("#btnSignUp").click(function() {
+					window.location.href = "signup.html";
+				});
+				$("#btnLogIn").click(function() {
+					window.location.href = "login.html";
+				});
+
+			} else {
+				$("a:not(.brand, .main-options a)").attr("href", "appointment.html");				
+				
+				$(".main-options button").click(function() {
+					window.location.href = "appointment.html";
+				});				
+			}
+		});
+	</script>
+</head>
+<body>
+	<div class="header">
+		<a class="brand" href="mainpage.html">Doctor's Dental Clinic</a>
+		<div class="header-options">
+			<a id="mainpageAppoint">Appointment</a>
+			<a href="login.html">Log in</a>
+			<a href="signup.html">Sign up</a>
+		</div>
+	</div>
+	<div class="parent-container">
+		<div class="set-images-cover">
+			<p><br><br></p>
+			<label>Doctor's Dental Clinic</label>
+			<p>A Dental Clinic Patient Management System with Appointment Scheduling</p>
+		</div>
+		<div class="set-images">
+			<img src="https://healthnet-rock.org/wp-content/uploads/Healthnet-146-HDR-Pano-scaled.jpg">
+			<img src="https://alveodental.com/wp-content/uploads/2020/07/Dental-Clinic02.jpg">
+			<img src="http://cmc.ph/wp-content/uploads/2017/08/DENTAL.jpg">
+			<img src="https://www.fhcsd.org/wp-content/uploads/2017/02/Dental-Services.png">
+			<img src="https://tanic.design/wp-content/uploads/2021/08/3-final_surgery_08.09-1024x640.jpg">
+			<img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a99ac983164551.5d344cb95ae19.jpg">
+			<img src="https://www.dentist-manila.com/wp-content/uploads/2016/11/dental-clinic-philippines.jpg">
+		</div>
+	</div>
+	<div class="main-options" align= "center">
+		<p>Join our site:</p>
+		<button id="btnSignUp" style="background-color: #0062ff; color:white">Sign Up</button>
+		<button id="btnLogIn" style="background-color: white">Log In</button>
+		<p>Other links:</p>
+		<a>Facebook</a>
+		<a>Twitter</a>
+		<a>Instagram</a>		
+	</div>
+
+</body>
+<footer style="text-align: right">
+	<a>Give Feedback</a>
+	<b>·</b>
+	<a>About Us</a>
+</footer>
+</html>

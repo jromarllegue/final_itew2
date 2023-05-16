@@ -1,0 +1,59 @@
+<!-- A Dental Clinic Patient Management System with Appointment Scheduling -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DCPMSw/AS - Profile</title>
+	<link rel="stylesheet" type="text/css" href="user.css"> </link>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+	<div class="header">
+		<a class="brand" href="mainpage.html">Doctor's Dental Clinic</a>
+		<div class="header-options">
+			<a href="appointment.html">Appointment</a>
+			<a href="doctors.html">Doctors</a>
+			<a href="profile.html">Profile</a>
+		</div>
+	</div>
+	<label class="title">Profile</label>
+	<div class="prof-container">
+		<img src="https://i.stack.imgur.com/YaL3s.jpg" id="pfp" title="Change Profile Picture">
+		<label id="txtFullName"></label>
+		<label id="txtEmail"></label>
+	</div>
+	<div class="prof-buttons">
+		<button onclick="showProfileForm('profile')">EDIT PROFILE</button>
+		<button onclick="showProfileForm('password')">CHANGE PASSWORD</button>
+		<button onclick="logoutAccount()">LOG OUT</button>
+	</div>
+	<div id="editForms">
+		<label id="lblFirst"></label>
+		<input type="text" id="txtFirst">
+		<br>
+		<label id="lblSecond"></label> 
+		<input type="text" id="txtSecond">
+		<br>
+		<label id="lblThird"></label>
+		<input type="text" id="txtThird">
+		<br>
+		<button class="fill-buttons btn-save">SAVE</button>		
+		<button class="fill-buttons" onclick="clearEdit()">Cancel</button>
+	</div>
+	<div class="records" align="center">
+		<label id="appointCount">No. of made appointments:<br><b></b></label>
+		<label id="dateJoined">Date joined:<br><b></b></label>
+		<label id="lastAppoint">Last appointment:<br><b></b></label>
+		<label id="doctor">Doctor:<br><b></b></label>
+	</div>
+	
+	<script src="user.js"></script>
+</body>
+<footer align="right">
+	<a>Give Feedback</a>
+	<b>·</b>
+	<a>About Us</a>	
+</footer>
+</html>

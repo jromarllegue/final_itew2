@@ -1,0 +1,40 @@
+<!-- A Dental Clinic Patient Management System with Appointment Scheduling -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DCPMSw/AS - Signup</title>
+	<link rel="stylesheet" type="text/css" href="account.css"> </link>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body background="https://www.oshamanual.com/media/wysiwyg/Blog/GammaComplianceSolutions-seotool-61644-OSHAComplianceChecklist-blogbanner1.jpg">
+	<div class="header">
+		<a class="brand" href="mainpage.html">Doctor's Dental Clinic</a>
+		<div class="header-options">
+			<a href="login.html">Log in</a>
+			<a href="signup.html">Sign up</a>
+		</div>
+	</div>	
+	<div class="container" align="center" style="margin-left: 20px; width:45%">
+		<label style="margin:30px 0px 20px 0px">Create an Account</label>
+		<label style="margin-bottom:10px; font-size:14px">Please fill up the following information:</label>
+	
+		<input type="text" id="txtFirstName" size="15" placeholder="First Name"></input>
+		<input type="text" id="txtLastName" size="15" placeholder="Last Name"></input>
+		<input type="text" id="txtEmail" size="41" placeholder="Email Address"></input>
+		<input type="password" id="txtPassword" size="41" placeholder="Password"></input>
+		<input type="password" id="txtConfPassword" size="41" placeholder="Confirm Password"></input>
+		<button id="btnSignup" onclick="createAccount()">SIGN UP</button>
+		<a href="login.html">Back to Login<a>
+	</div>
+
+	<script src="account.js"></script>
+</body>
+<footer>
+	<a><b>Give Feedback</a>
+	·
+	<a>About Us</b></a>
+</footer>
+</html>
